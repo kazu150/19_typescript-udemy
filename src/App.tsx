@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Data from './data.json';
+
+type Users = typeof Data;
+// ↑typeofを使うことで、json内のデータを型推定することができるから、そこがめちゃ強力
 
 function App() {
     //  Basic Types
